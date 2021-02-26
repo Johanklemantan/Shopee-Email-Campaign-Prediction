@@ -37,6 +37,14 @@ The goals of this project is to build model that able to predict whether user is
 1. age = age of the user
 1. domain = domain email of each user
 
+## Data Visualization
+
+### Relationship Age to Promotion Email Read Rate and Total of Shopee User
+<img src='/static/visualreadme2.PNG'>
+
+### Target Variable and Relationship of User Country to Predicting Promotion Email Read Rate
+<img src='/static/visualreadme.PNG'>
+
 # Result
 
 ## After searching the least Total Loss, found the most fitted model is :
