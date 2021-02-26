@@ -49,16 +49,16 @@ The goals of this project is to build model that able to predict whether user is
 # Dashboard
 
 ## Home
-<img src='/static/dashboardhome.png'>
+<img src='/static/dashboardhome.PNG'>
 
 ## Business Problem Visualization
-<img src='/static/dashboardvisualization.png'>
+<img src='/static/dashboardvisualization.PNG'>
 
 ## Prediction
-<img src='/static/dashboardprediction.png'>
+<img src='/static/dashboardprediction.PNG'>
 
 ## Results
-<img src='/static/dashboardresult.png'>
+<img src='/static/dashboardresult.PNG'>
 
 <center>
   Thank You for Your Attention :)
