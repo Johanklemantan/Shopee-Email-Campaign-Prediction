@@ -58,7 +58,7 @@ The goals of this project is to build model that able to predict whether user is
 <img src='../static/dashboardprediction.png'>
 
 ## Results
-<img src='../static/dashboardresults.png'>
+<img src='../static/dashboardresult.png'>
 
 <center>
   Thank You for Your Attention :)
