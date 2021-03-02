@@ -1,0 +1,45 @@
+.judulyes{
+    font-size: 80px;
+    font-family: 'Sigmar One', cursive;
+    color:chocolate
+}
+.judulno{
+    font-size: 80px;
+    font-family: 'Sigmar One', cursive;
+    color:darkblue
+}
+table,th,td{
+    border : 1px solid black;
+    border-collapse: collapse;
+}
+.avatar{
+    position:absolute;
+    width:200px;
+    height:400px;
+    left:200px;
+
+}
+.hasilyes{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 40px;
+    color:rgb(185, 4, 240)
+}
+.hasilno{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 40px;
+    color:rgb(69, 0, 158)
+}
+
+.button_home{
+    width:300px;
+    color:snow;
+    font-size: 10px;
+    padding:12px 0;
+    background:rgb(255, 171, 2);
+    border:0;
+    border-radius: 20px;
+    outline:none;
+    margin-top:30px;
+    cursor:pointer;
+    font-size: 30px;
+}

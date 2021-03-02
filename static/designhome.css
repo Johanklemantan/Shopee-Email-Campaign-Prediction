@@ -1,0 +1,129 @@
+.container{
+    width:100%;
+    height:100vh;
+    background-position: center;
+    background-size:auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+} 
+.navbar{
+    height:12%;
+    display:flex;
+    align-items: center;
+}
+.logo{
+    width:100px;
+    cursor:pointer;
+    /* margin-left: 10%; */
+}
+nav{
+    flex:1;
+    text-align: left;
+}
+
+nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:coral;
+    font-size: 22px;
+}
+
+.row{
+    display: flex;
+    height: 80%;
+    align-items: center;
+    padding-left: 8%;
+}
+.rowbg{
+    display: flex;
+    height: 80%;
+    align-items: center;
+    padding-left: 5%;
+}
+.bannerhome{
+    /* opacity: 0.5; */
+    position:absolute;
+    height:100%;
+    bottom:0;
+    right:0;
+}
+.bannerbg{
+    /* opacity: 0; */
+    position:absolute;
+    height:100%;
+    bottom:0;
+    right:0;
+}
+.col{
+    flex-basis: 50%;
+}
+.colbg{
+    flex-basis: 50%;
+}
+col h1{
+    color:rgb(255, 171, 2) ;
+    font-size: 50px;
+    font-family: 'Marcellus', serif;
+}
+.col p{
+    color:rgb(75, 24, 24);
+    font-size: 30px;
+    line-height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.colbg p{
+    color:rgb(75, 24, 24);
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.colbg h1{
+    color:rgb(255, 30, 0) ;
+    font-size: 50px;
+    font-family: 'Marcellus', serif;
+}
+button{
+    width:580px;
+    color:snow;
+    font-size: 15px;
+    padding:12px 0;
+    background:rgb(255, 171, 2);
+    border:0;
+    border-radius: 20px;
+    outline:none;
+    margin-top:30px;
+    cursor:pointer;
+    font-size: 30px;
+}
+.card{
+    width:500px;
+    height:305px;
+    display:inline-block;
+    border-radius: 10px;
+    padding:15px 25px;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+.card1{
+    background-image: url(../static/predictpage.jpg);
+}
+.card2{
+    background-image: url(../static/resultpage.jpg);
+}
+
+.card p{
+    color:navy;
+    font-size: 15px;    
+}
+h3{
+    font-size: 35px;
+}
