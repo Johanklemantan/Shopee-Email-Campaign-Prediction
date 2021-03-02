@@ -64,6 +64,9 @@ The goals of this project is to build model that able to predict whether user is
 ## Background
 <img src='/static/dashbg.PNG'>
 
+## Database
+<img src='/static/dashdata.PNG'>
+
 ## Business Problem Visualization
 <img src='/static/dashvis.PNG'>
 
