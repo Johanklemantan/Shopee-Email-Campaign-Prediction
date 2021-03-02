@@ -1,6 +1,8 @@
 # Final-Project-JCDS-0506-BDG-Widagdo-Johan-Klemantan
 This is the final project for JCDS 0506 BDG Program about Email Classification
 
+<img src='https://thumbs.gfycat.com/NegligiblePaltryCorydorascatfish-small.gif'>
+
 ## Background
 Sending email is one of the alternatives used by Shopee to tell and promote certain event sale to users. With the ability to be able to predict whether user is reading or not reading the email, enable Shopee to evaluate their crew works during campaign period until event launch. This is because, when user is open the email, the possibility of that user know there is an event or promo will be highly increased and also increasing the possibility of that user do transaction during event period. Therefore, with the making of this model, hopefully Shopee able to build a strategy for future marketing.
 
@@ -57,16 +59,20 @@ The goals of this project is to build model that able to predict whether user is
 # Dashboard
 
 ## Home
-<img src='/static/dashboardhome.PNG'>
+<img src='/static/dashhome.PNG'>
+
+## Background
+<img src='/static/dashbg.PNG'>
 
 ## Business Problem Visualization
-<img src='/static/dashboardvisualization.PNG'>
+<img src='/static/dashvis.PNG'>
 
 ## Prediction
-<img src='/static/dashboardprediction.PNG'>
+<img src='/static/dashpred.PNG'>
 
 ## Results
-<img src='/static/dashboardresult.PNG'>
+<img src='/static/dashresyes.PNG'>
+<img src='/static/dashresno.PNG'>
 
 <center>
   Thank You for Your Attention :)
