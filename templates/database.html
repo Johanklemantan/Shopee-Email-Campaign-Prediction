@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee's User Email Read Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../static/designvis.css">
+
+</head>
+<body >
+    <style>
+        body{
+            background-color: rgba(207, 252, 147, 0.904);
+        }
+    </style>
+    <div class='container'>
+        <div class='navbar'>
+            <a href='http://127.0.0.1:5000'><img src='../static/logo.png' class='logo'></a>
+            <nav>
+                <ul>    
+                    <li><a href='http://127.0.0.1:5000/background'>ABOUT</a ></li>
+                    <li><a href='http://127.0.0.1:5000/visualize'>PROBLEM INSIGHT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <center>
+        <div class="judul">Database</div>
+        </center>
+        <table border=1>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Subject Line Length</th>
+                    <th>Last Open Day</th>
+                    <th>Last Login Day</th>
+                    <th>Last Check Out Day</th>
+                    <th>Open Count Last 10 Days</th>
+                    <th>Open Count Last 30 Days</th>
+                    <th>Open Count Last 60 Days</th>
+                    <th>Login Count Last 10 Days</th>
+                    <th>Login Count Last 30 Days</th>
+                    <th>Login Count Last 60 Days</th>
+                    <th>Checkout Count Last 10 Days</th>
+                    <th>Checkout Count Last 30 Days</th>
+                    <th>Checkout Count Last 60 Days</th>
+                    <th>Open Flag</th>
+                    <th>Age</th>
+                    <th>Domain</th>
+                    <th>Country</th>
+                    <th>Day Email Sent</th>
+                    <th>Character Length</th>
+                    <th>Last Time Open Email</th>
+                    <th>Last Time Open Shopee</th>
+                    <th>Last Time Checkout Shopee</th>
+                    <th>Open Frequency</th>
+                    <th>Login Frequency</th>
+                    <th>Checkout Frequency</th>
+                    
+         
+                </tr>
+                </thead> 
+            {% for baris in hasil_data %}
+            <tr>
+                <td> {{baris[0]}}</td>
+                <td> {{baris[1]}}</td>
+                <td> {{baris[2]}}</td>
+                <td> {{baris[3]}}</td>
+                <td> {{baris[4]}}</td>
+                <td> {{baris[5]}}</td>
+                <td> {{baris[6]}}</td>
+                <td> {{baris[7]}}</td>
+                <td> {{baris[8]}}</td>
+                <td> {{baris[9]}}</td>
+                <td> {{baris[10]}}</td>
+                <td> {{baris[11]}}</td>
+                <td> {{baris[12]}}</td>
+                <td> {{baris[13]}}</td>
+                <td> {{baris[14]}}</td>
+                <td> {{baris[15]}}</td>
+                <td> {{baris[16]}}</td>
+                <td> {{baris[17]}}</td>
+                <td> {{baris[18]}}</td>
+                <td> {{baris[19]}}</td>
+                <td> {{baris[20]}}</td>
+                <td> {{baris[21]}}</td>
+                <td> {{baris[22]}}</td>
+                <td> {{baris[23]}}</td>
+                <td> {{baris[24]}}</td>
+                <td> {{baris[25]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+            
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee's User Email Read Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../static/designvis.css">
+
+</head>
+<body >
+    <style>
+        body{
+            background-color: rgba(20, 207, 240, 0.904);
+        }
+    </style>
+    <div class='container'>
+        <div class='navbar'>
+            <a href='http://127.0.0.1:5000'><img src='../static/logo.png' class='logo'></a>
+            <nav>
+                <ul>    
+                    <li><a href='http://127.0.0.1:5000/background'>ABOUT</a ></li>
+                    <li><a href='http://127.0.0.1:5000/visualize'>PROBLEM INSIGHT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <center>
+        <div class="judul">Feature Visualization</div>
+        </center>
+        <div class="isi">1. Target Variable</div><br><br>
+        <div class="gambar1">
+            <img src="../static/Target.png" width="300" height="300">
+        </div>
+        <div class="ket">
+            <p>
+                <strong>Analysis</strong><br>
+                1. 85% of Shopee's User did not read the promotion Email<br>
+                2. We have to be very selective in order to achieve high on target point<br>
+            </p>
+        </div>
+        <br><br><br><br>
+
+        <div class="isi">2. User Age Distribution</div><br><br>
+        <div class="gambar2">
+            <img src="../static/Ageratio.png" width="1000" height="600">
+        </div>
+        <div class="ket">
+            <p>
+                <strong>Analysis</strong><br>
+                1. 65% of Shopee's User are on Age Category working<br>
+                2. University and Family Age Category are both worth about 15% of Shopee's user<br>
+            </p>
+        </div>
+        <br><br><br><br>
+
+        <div class="isi">3. User's Country Email Reading Ratio</div><br><br>
+        <div class="gambar3">
+            <img src="../static/country.png" width="1000" height="400">
+        </div>
+        <div class="ket">
+            <p>
+                <strong>Analysis</strong><br>
+                1. 35% of Shopee's User from Phillipines tend to read the Email<br>
+                2. User from Singapore tend to be the hardest one to approach by Email<br>
+            </p>
+        </div>
+        <br><br><br><br>
+        
+        <div class="isi">4. User's Country Email Reading Ratio</div><br><br>
+        <div class="gambar4">
+            <img src="../static/open_freq.png" width="600" height="300">
+            <img src="../static/lastopenemail.png" width="550" height="300">    
+        </div>
+        <div class="ket">
+            <p>
+                <strong>Analysis</strong><br>
+                1. User that’s most likely to  read the promotion email, actually open their Email  0.8-1.2 times per day<br>
+                2. User that’s most likely to  read the promotion email, open their email in the last 1 year at least once.<br>
+            </p>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="isi">5. Heatmap Correlation Target Variable before and after preprocessing</div><br><br>
+        <div class="gambar5">
+            <p>Initial Data Correlation</p>
+            <img src="../static/heatmapawal.png" width="1200" height="600">
+            <p>After preprocessing</p>
+            <img src="../static/heatmapakhir.png" width="500" height="400">    
+        </div>
+        <div class="ket">
+            <p>
+                <strong>Analysis</strong><br>
+                1. Before preprocessing, there is only open email last X day that has big correlation to the target variable<br>
+                2. After preprocessing, only a slight increase of correlation<br>
+                3. Actually to predict target more precisely, need further study for other features like job, or area location<br>
+            </p>
+        </div>
+        <br><br><br><br>
+    </div>
+
+</body>
+</html>

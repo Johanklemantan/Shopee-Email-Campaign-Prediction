@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="../static/result.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Sigmar+One&display=swap" rel="stylesheet">
+    <center>
+    <title>Prediction Result</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background-color: rgb(237, 252, 151);
+        }
+    </style>
+
+        <h2 class="judulyes"><strong>Prediction Result</strong> </h2>
+        <br>
+        <table>
+            <tr>
+            <th> No </th>
+            <th> Feature </th>
+            <th> User Characteristic </th>
+            </tr>
+            <tr>
+            <td> 1 </td>
+            <td> User Age </td>
+            <td> {{data['age']}} </td>
+            </tr>
+
+            <tr>
+            <td> 2 </td>
+            <td> Email Domain </td>
+            <td> {{data['domain']}} </td>
+            </tr>
+
+            <tr>
+            <td> 3 </td>
+            <td> Country </td>
+            <td> {{data['country']}} </td>
+            </tr>
+
+            <tr>
+            <td> 4 </td>
+            <td> Day When the Email Sent </td>
+            <td> {{data['day']}} </td>
+            </tr>
+
+            <tr>
+            <td> 5 </td>
+            <td> Email Subject Character Length </td>
+            <td> {{data['character_length']}} </td>
+            </tr>
+
+            <tr>
+            <td> 6 </td>
+            <td> Last Time Open Email </td>
+            <td> {{data['last_time_open_email']}} </td>
+            </tr>
+
+            <tr>
+            <td> 7 </td>
+            <td> Last Time Open Shopee Account </td>
+            <td> {{data['last_time_open_shopee']}} </td>
+            </tr>
+
+            <tr>
+            <td> 8 </td>
+            <td> Last Time Checkout(Buy Product) at Shopee </td>
+            <td> {{data['last_time_checkout_shopee']}} </td>
+            </tr>
+
+            <tr>
+            <td> 9 </td>
+            <td> Frequency of Open Email per Day </td>
+            <td> {{data['open_frequency']}} </td>
+            </tr>
+
+            <tr>
+            <td> 10 </td>
+            <td> Frequency of Open Shopee App per Day </td>
+            <td> {{data['login_frequency']}} </td>
+            </tr>
+
+            <tr>
+            <td> 11 </td>
+            <td> Frequency of Checking Out at Shopee per Day </td>
+            <td> {{data['checkout_frequency']}} </td>
+            </tr>    
+
+            
+        </table>
+    <div><img src='../static/avataryes.png' class='avatar'></div>
+
+        <h3 class="hasilyes"><strong>This user will {{ pred }}</strong> </h3>
+        <form action = "http://127.0.0.1:5000">
+            <button style=" width:300px;
+            color:snow;
+            font-size: 10px;
+            padding:12px 0;
+            background:rgb(255, 171, 2);
+            border:0;
+            border-radius: 20px;
+            outline:none;
+            margin-top:30px;
+            cursor:pointer;
+            font-size: 30px;  type="button" class="btn btn-info"">🏠 Home</button>
+            </form><br><br>
+    </center> 
+
+</body>
+</html>

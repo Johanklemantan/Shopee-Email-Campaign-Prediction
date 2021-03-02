@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../static/designpredict.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Sigmar+One&display=swap" rel="stylesheet">
+    <title>Email Prediction</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background-color: rgb(252, 218, 151);
+        }
+    </style>
+    <center><h4 class="judul">Prediction Page</h4>
+    <p>This page will ask you some information regarding to the specified user</p></center>
+        <div class='row'>
+            
+            <div class='col1'>
+            
+            <form method="POST" action = "http://127.0.0.1:5000/result">
+            
+            <label for="age"></label><h5>1. User Age</label></h5>    
+                <input type="number" name="age" step="1" min="15" max="90" placeholder="age" required/><br>
+                <br>
+         
+            <label for="domain"><h5>2. Email Domain</h5></label><br>
+                <select id="domain" name="domain">
+                    <option value="@gmail.com">@gmail.com</option>
+                    <option value="@yahoo.com">@yahoo.com</option>
+                    <option value="other">Others</option>
+                </select><br><br>
+
+            <label for="country"><h5>3. User Country</h5></label><br>
+                <select id="country" name="country">
+                    <option value="Singapore">Singapore</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Vietnam">Vietnam</option>
+                </select><br><br>
+
+            <label for="day"><h5>4. Day When the Email Sent</h5></label><br>
+                <select id="day" name="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select><br><br>
+                
+            <label for="character_length"><h5>5. Email Subject Character Length</h5></label>
+                <h7><i>Ideal Email subject character length is coming from range 9-60 characters.<br>
+                    Other than that, it's categorized as Not Ideal</i></h7><br>
+                <input type="radio" id="ideal" name="character_length" value="ideal">
+                <label for="ideal">Ideal</label>
+                <input type="radio" id="not ideal" name="character_length" value="not ideal">
+                <label for="not ideal">Not Ideal</label><br></h5><br>
+            </div>
+
+            <div class='col2'>
+            <label for="last_time_open_email"><h5>6A. Last Time Open Email</h5></label><br>
+                <select id="last_time_open_email" name="last_time_open_email">
+                    <option value="0-1 year">0-1 Year</option>
+                    <option value="1-2 years">1-2 Years</option>
+                    <option value="2-3 years">2-3 Years</option>
+                    <option value="more than 3 years">More Than 3 Years</option>
+                </select><br><br>
+
+            <label for="last_time_open_shopee"><h5>6B. Last Time Open Shopee Account</h5></label><br>
+                <select id="last_time_open_shopee" name="last_time_open_shopee">
+                    <option value="0-1 year">0-1 Year</option>
+                    <option value="1-2 years">1-2 Years</option>
+                    <option value="2-3 years">2-3 Years</option>
+                    <option value="more than 3 years">More Than 3 Years</option>
+                </select><br><br>
+
+            <label for="last_time_checkout_shopee"><h5>6C. Last Time Checkout(Buy Product) at Shopee</h5></label><br>
+                <select id="last_time_checkout_shopee" name="last_time_checkout_shopee">
+                    <option value="0-1 year">0-1 Year</option>
+                    <option value="1-2 years">1-2 Years</option>
+                    <option value="2-3 years">2-3 Years</option>
+                    <option value="more than 3 years">More Than 3 Years</option>
+                </select><br><br>
+            </div>
+
+            <div class='col3'>
+            <label for="open_frequency"><h5>7A. Frequency of User Open Email per Day</h5></label><br>   
+                <input type="number" name="open_frequency" step="0.01" min="0" max="2.8" placeholder="email" required/></h5><br>
+
+            <label for="login_frequency"><h5>7B. Frequency of Open Shopee App per Day</h5></label><br>  
+                <input type="number" name="login_frequency" step="0.1" min="0" max="23" placeholder="login" required/></h5><br>
+
+            <label for="checkout_frequency"><h5>7C. Frequency of Checking Out at Shopee per Day</h5></label><br>  
+                <input type="number" name="checkout_frequency" step="0.1" min="0" max="15" placeholder="checkout" required/></h5><br>
+                <br>
+            </div>
+                
+        
+            <br><br>
+        </div>  
+        
+    <center>
+        <div><img src='../static/avatar.png' class='avatar'></div>
+        <button style="width: 300px;color:snow;font-size: 10px;padding:12px 0;background:rgb(15, 108, 247);border:0;border-radius: 20px;outline:none;margin-top:30px;cursor:pointer;font-size: 30px; type="button" class="btn btn-info">📧 Predict Now</button>
+        </form><br>
+
+        <form action = "http://127.0.0.1:5000">
+        <button style=" width:300px;
+        color:snow;
+        font-size: 10px;
+        padding:12px 0;
+        background:rgb(255, 171, 2);
+        border:0;
+        border-radius: 20px;
+        outline:none;
+        margin-top:30px;
+        cursor:pointer;
+        font-size: 30px;  type="button" class="btn btn-info"">🏠 Home</button>
+        </form><br><br>
+    </center>
+
+</body>
+</html>

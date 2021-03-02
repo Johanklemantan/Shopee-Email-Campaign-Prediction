@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee's User Email Read Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../static/designhome.css">
+
+</head>
+<body >
+    <style>
+        body{
+            background-color: rgb(252, 218, 151);
+        }
+    </style>
+    <div class='container'>
+        <div class='navbar'>
+            <a href='http://127.0.0.1:5000'><img src='../static/logo.png' class='logo'></a>
+            <nav>
+                <ul>    
+                    <li><a href='http://127.0.0.1:5000/background'>ABOUT</a ></li>
+                    <li><a href='http://127.0.0.1:5000/visualize'>PROBLEM INSIGHT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class='row'>
+            
+            <div class='col'>
+                <h1>SHOPEE PROMOTION EMAIL CAMPAIGN PREDICTION</h1>
+                <p>Will These User Read the Promotion Email ?
+                </p>
+                <form method="POST" action = "http://127.0.0.1:5000/predict">
+                    <button style="height:45px;width:300px;font-size: 25px;text-align: center;line-height: 20px;background-color: #f16f24; color: cornsilk; type="button" class="btn btn-info">Go to Prediction Page</button>
+                    </form><br>
+                    
+                        <a href='http://127.0.0.1:5000/database'>
+                            <div class='card card1'>    
+                                <h3>Dataset</h3>
+                                <p>Check the raw dataset here</p>
+                            </div></a >
+                    
+                    
+                    
+            </div>
+            <div><img src='../static/shop4.png' class='bannerhome'></div>
+        </div>
+            
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
