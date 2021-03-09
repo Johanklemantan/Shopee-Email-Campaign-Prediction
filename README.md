@@ -1,4 +1,5 @@
-# Final-Project-JCDS-0506-BDG-Widagdo-Johan-Klemantan
+# Shopee Email Campaign Prediction
+#### By Johan Klemantan
 This is the final project for JCDS 0506 BDG Program about Email Classification
 
 <img src='https://thumbs.gfycat.com/NegligiblePaltryCorydorascatfish-small.gif'>
