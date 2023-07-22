@@ -8,7 +8,7 @@ app = Flask(__name__)
 model = joblib.load('best_model_shopee_email')
 app.config['MYSQL_HOST']='localhost'
 app.config['MYSQL_USER']='root'
-app.config['MYSQL_PASSWORD']='Funicula8'
+app.config['MYSQL_PASSWORD']='' ## change your password here
 app.config['MYSQL_DB']='johan'
 app.config['MYSQL_CURSORCLASS']='DictCursor'
 
